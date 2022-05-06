@@ -15,14 +15,12 @@ public class Arithmetics {
 
     static void div(int operand1, int operand2) {
         if (operand2 != 0) {
-            System.out.println("Операция деления: " + operand1 + " / " + operand2 + " = " + (operand1 / operand2));
+            System.out.println("Операция деления: " + operand1 + " / " + operand2 + " = " + (operand1 / (double)operand2));
         } else {
             System.out.println("Деление на ноль! Операция не имеет решения");
         }
     }
-}
 
-class ArithmeticsDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean kluchVichoda = true;
