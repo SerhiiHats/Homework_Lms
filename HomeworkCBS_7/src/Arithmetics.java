@@ -31,7 +31,7 @@ public class Arithmetics {
             System.out.println("Введите с клавиатуры переменную B :");
             int a2 = scanner.nextInt();
             while (kluchVichoda) {
-                System.out.println("Введите с клавиатуры одну из операций: ( + - * / ), для выхода - любой другой символ:");
+                System.out.println("Вы ввели: " + a1 + " и " + a2 + " выбирете одну из операций: ( + - * / ), для выхода - любой другой символ:");
                 String arithmOperaziya = scanner.next();
                 switch (arithmOperaziya) {
                     case "+": {

@@ -6,8 +6,8 @@ public class Conversion {
     }
 
     public static void main(String[] args) {
-        double valuta = 0;
-        double kursValuta = 0;
+        double valuta;
+        double kursValuta;
         Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.println("Введите количество условной валюты:");
@@ -19,18 +19,18 @@ public class Conversion {
                 System.out.println();
                 continue;
             }
-            System.out.println("Вы ввели: " + valuta + " условной валюты. Введите курс выбраной валюты к гривне:");
+            System.out.println("Вы ввели: " + valuta + " условной валюты. Введите курс к др.валюте:");
             if (scan.hasNextDouble()) {
                 kursValuta = scan.nextDouble();
             } else {
-                System.out.println("Неверный ввод данных, можно ввести только число");
+                System.out.println("Неверный ввод данных, можно ввести только число или через \" , \"");
                 scan.nextLine();
                 System.out.println();
                 continue;
             }
-            System.out.println(valuta + " условной валюты, курс к гривне: " + kursValuta + ", после конвертации получите: " + convert(valuta, kursValuta) + " грн.");
-            System.out.println("Вы хотите ввести новую валюту? продолжить Да / нет , введите в концоль свой выбор:");
-            if (scan.next().equalsIgnoreCase("нет")) {
+            System.out.println("В наличии условной валюты: " + valuta + "\nкурс к др.валюте:          " + kursValuta + " \nпосле конвертации:         " + convert(valuta, kursValuta));
+            System.out.println("Продолжить? " + "\u001B[1;32m" + "(0 - выход/ люб.символ - продолжить):" + "\u001B[0m");
+            if (scan.next().equals("0")) {
                 break;
             }
         }
