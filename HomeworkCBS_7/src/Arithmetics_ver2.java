@@ -1,5 +1,3 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Arithmetics_ver2 {
@@ -25,11 +23,12 @@ public class Arithmetics_ver2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int chetchikArifmSimvol = 0;
-        char arifmetSimvolchar = ' ';
-        int operand1;
-        int operand2;
-//        while (true) {
+        while (true) {
+            int chetchikArifmSimvol = 0;
+            char arifmetSimvolchar = ' ';
+            int operand1;
+            int operand2;
+
             System.out.println("Арифметические операции над переменными А и В");
             System.out.println("Введите с клавиатуры в строчку две переменные и оператор между ними (по примеру 2+5):");
             String prinyatayaStroka = scanner.nextLine();
@@ -77,13 +76,14 @@ public class Arithmetics_ver2 {
                 }
             }
 
-//            System.out.println("Вы хотите продолжить с другими переменными: Да - любой символ / Нет - \" 0 \":");
-//            if (scanner.next().equals("0")) {
-//                break;
-//            } else {
-//                System.out.println();
-//            }
-//        }
+            System.out.println("Вы хотите продолжить с другими переменными: " + "\u001B[1;32m" + "Да - любой символ / Нет - \" 0 \":" + "\u001B[0m");
+            if (scanner.next().equals("0")) {
+                break;
+            } else {
+                scanner.nextLine();
+                //System.out.println();
+            }
+        }
 
         System.out.println("Конец программы");
         scanner.close();
