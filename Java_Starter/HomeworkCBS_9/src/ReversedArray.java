@@ -38,7 +38,7 @@ public class ReversedArray {
         massiv1 = myReverse(massiv1);
         System.out.println("2. Инвентированнный масив от исходного   = " + Arrays.toString(massiv1));
         int pozichMassiv2 = 5;
-        int lenghtMassiv2 = 10;
+        int lenghtMassiv2 = 12;
         int [] massiv2 = subArray(massiv1, pozichMassiv2, lenghtMassiv2);
         System.out.println("3. Часть массива с позиции: " + pozichMassiv2 + " длиной: " + lenghtMassiv2 + " = " + Arrays.toString(massiv2));
     }
