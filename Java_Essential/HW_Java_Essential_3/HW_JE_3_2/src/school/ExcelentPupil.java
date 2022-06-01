@@ -7,17 +7,17 @@ public class ExcelentPupil extends Pupil {
 
     @Override
     void study() {
-        System.out.println("Я учусь на отлично и буду поступать в университет");
+        System.out.println("Отлично учюсь и буду поступать в университет");
     }
 
     @Override
     void read() {
-        System.out.println("Я уже хорошо читаю, скорость чтения у меня высокая, я могу прочитать целую книгу");
+        System.out.println("Отлично читаю, скорость чтения у меня высокая, я могу прочитать целую книгу");
     }
 
     @Override
     void write() {
-        System.out.println("Я умею писать без ошибок и знаю все правила");
+        System.out.println("Умею писать без ошибок и знаю все правила");
     }
 
     @Override

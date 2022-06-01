@@ -6,17 +6,17 @@ public class BadPupil extends Pupil{
     }
     @Override
     void study() {
-        System.out.println("Я иногда получаю плохие оценки, но я непланирую никуда поступать");
+        System.out.println("Плохо учюсь, получаю плохие оценки, но я непланирую никуда поступать");
     }
 
     @Override
     void read() {
-        System.out.println("Я не люблю читать, потомучто плохо читаю");
+        System.out.println("Читать я не люблю, потому-что плохо читаю");
     }
 
     @Override
     void write() {
-        System.out.println("Я умею писать немного, но у меня постоянные ошибки");
+        System.out.println("Писать я не умею, допускаю постоянные ошибки");
     }
 
     @Override

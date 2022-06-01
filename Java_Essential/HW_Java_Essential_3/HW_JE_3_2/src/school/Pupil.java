@@ -8,7 +8,7 @@ public class Pupil {
     }
 
     void study(){
-        System.out.println("Я учусь");
+        System.out.println("Я учюсь");
 
     }
 

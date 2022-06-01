@@ -6,17 +6,17 @@ public class GoodPupil extends Pupil{
     }
     @Override
     void study() {
-        System.out.println("Я хорошист, получаю средние оценки, планирую поступать в техникум");
+        System.out.println("Средне учюсь, получаю средние оценки, планирую поступать в техникум");
     }
 
     @Override
     void read() {
-        System.out.println("Я умею читать средне, сильно много читать я не люблю");
+        System.out.println("Средне умею читать, сильно много читать я не люблю");
     }
 
     @Override
     void write() {
-        System.out.println("Я умею писать, но иногда допускаю ошибки, грамматику мне нужно подтянуть");
+        System.out.println("Пишу иногда с ошибками, грамматику мне нужно подтянуть");
     }
 
     @Override
