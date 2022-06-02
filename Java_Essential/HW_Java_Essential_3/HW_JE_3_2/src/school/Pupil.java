@@ -9,12 +9,10 @@ public class Pupil {
 
     void study(){
         System.out.println("Я учюсь");
-
     }
 
     void read() {
         System.out.println("Я умею читать");
-
     }
 
     void write() {
